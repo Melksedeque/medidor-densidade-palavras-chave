@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { analyzeKeywordDensity } from '../utils/keywordAnalyzer';
 import type { AnalysisResult } from '../types';
 
-const KeywordAnalyzer = () => {
+export default function KeywordAnalyzer() {
   const [keywords, setKeywords] = useState('');
   const [text, setText] = useState('');
   const [result, setResult] = useState<AnalysisResult | null>(null);
@@ -154,5 +154,3 @@ const KeywordAnalyzer = () => {
     </div>
   );
 };
-
-export default KeywordAnalyzer;

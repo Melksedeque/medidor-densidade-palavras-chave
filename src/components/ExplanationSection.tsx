@@ -1,4 +1,4 @@
-const ExplanationSection = () => {
+export default function ExplanationSection() {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,5 +90,3 @@ const ExplanationSection = () => {
     </section>
   );
 };
-
-export default ExplanationSection;
