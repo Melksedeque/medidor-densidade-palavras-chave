@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './components/Header';
+import ExplanationSection from './components/ExplanationSection';
+import KeywordAnalyzer from './components/KeywordAnalyzer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+      <Header />
+      <ExplanationSection />
+      <KeywordAnalyzer />
+      
+      {/* Footer */}
+      <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-gray-600 dark:text-gray-400">
+            <p className="text-sm">
+              Desenvolvido com ❤️ usando React, TypeScript e Tailwind CSS
+            </p>
+            <p className="text-xs mt-2">
+              Ferramenta para análise de densidade de palavras-chave em textos
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
