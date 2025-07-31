@@ -53,7 +53,7 @@ A aplicação possui um design moderno e responsivo com:
 - **React 19** - Biblioteca para construção da interface
 - **TypeScript 5.8.3** - Superset do JavaScript com tipagem estática
 - **Vite 6.0** - Build tool e dev server ultrarrápido
-- **Tailwind CSS 4.0** - Framework CSS utilitário para estilização
+- **Tailwind CSS 4.1** - Framework CSS utilitário para estilização
 - **PostCSS** - Processador CSS para otimização
 
 ### Utilitários
@@ -203,6 +203,10 @@ npm run lint
 - [ ] **Performance** com React.memo e useMemo
 - [ ] **Acessibilidade** (WCAG 2.1)
 
+### 💡 Sugestões e melhorias são sempre bem-vindas!
+
+Abra uma [issue](https://github.com/Melksedeque/medidor-densidade-palavras-chave/issues) ou envie um [pull request](https://github.com/Melksedeque/medidor-densidade-palavras-chave/pulls).
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
@@ -211,15 +215,11 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ## Autor
 
-**Melksedeque Silva** - Desenvolvedor Full Stack
-
-- 🐙 GitHub - [Melksedeque](https://github.com/Melksedeque)
-- 🎯 Frontend Mentor - [Melksedeque](https://www.frontendmentor.io/profile/Melksedeque)
-- 🐦 Twitter/X - [@SouzaMelk](https://x.com/SouzaMelk)
-- 💼 LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/)
+- GitHub - [Melksedeque](https://github.com/Melksedeque)
+- Frontend Mentor - [Melksedeque](https://www.frontendmentor.io/profile/Melksedeque)
+- Twitter/X - [@SouzaMelk](https://x.com/SouzaMelk)
+- LinkedIn - [Melksedeque Silva](https://www.linkedin.com/in/melksedeque-silva/)
 
 ---
-
-💡 **Sugestões e melhorias são sempre bem-vindas!** Abra uma [issue](https://github.com/Melksedeque/medidor-densidade-palavras-chave/issues) ou envie um [pull request](https://github.com/Melksedeque/medidor-densidade-palavras-chave/pulls).
 
 ⭐ **Se este projeto foi útil para você, considere dar uma estrela no repositório!**
