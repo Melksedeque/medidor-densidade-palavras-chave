@@ -27,7 +27,7 @@ export const analyzeKeywordDensity = (keywords: string[], text: string): Analysi
         density: 0,
         status: 'poor' as const,
         statusText: 'Pobre - Precisa melhorar',
-        statusColor: 'text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/20'
+        statusColor: 'text-sky-600 bg-sky-50 dark:text-sky-400 dark:bg-sky-900/20'
       }))
     };
   }
@@ -51,7 +51,7 @@ export const analyzeKeywordDensity = (keywords: string[], text: string): Analysi
     if (density >= 0 && density <= 0.59) {
       status = 'poor';
       statusText = 'Pobre - Precisa melhorar';
-      statusColor = 'text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/20';
+      statusColor = 'text-sky-600 bg-sky-50 dark:text-sky-400 dark:bg-sky-900/20';
     } else if (density >= 0.6 && density <= 1.5) {
       status = 'excellent';
       statusText = 'Ótima - Pode ser usado';
@@ -59,11 +59,11 @@ export const analyzeKeywordDensity = (keywords: string[], text: string): Analysi
     } else if (density >= 1.51 && density <= 2) {
       status = 'bad';
       statusText = 'Ruim - Precisa reduzir';
-      statusColor = 'text-yellow-600 bg-yellow-50 dark:text-yellow-400 dark:bg-yellow-900/20';
+      statusColor = 'text-amber-600 bg-amber-50 dark:text-amber-400 dark:bg-amber-900/20';
     } else {
       status = 'terrible';
       statusText = 'Péssima - Correção urgente';
-      statusColor = 'text-red-700 bg-red-100 dark:text-red-300 dark:bg-red-900/30';
+      statusColor = 'text-red-600 bg-red-50 dark:text-red-300 dark:bg-red-900/20';
     }
     
     return {
