@@ -13,7 +13,7 @@ export default function Footer() {
                             Ferramenta para análise de densidade de palavras-chave em textos
                         </p>
                         <p className="text-sm">
-                            Desenvolvido por <a href="https://github.com/Melksedeque" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Melksedeque Silva</a> com ❤️ usando React, TypeScript e Tailwind CSS
+                            Desenvolvido por <a href="https://github.com/Melksedeque" target="_blank" className="text-red-700 dark:text-red-400 hover:underline">Melksedeque Silva</a> com ❤️ usando React, TypeScript e Tailwind CSS
                         </p>
                     </div>
                 </div>
@@ -22,13 +22,13 @@ export default function Footer() {
             {/* Botão de tema fixo no canto inferior direito */}
             <button
                 onClick={toggleTheme}
-                className="rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-lg hover:shadow-xl transition-all duration-200 border border-gray-200 dark:border-gray-600 z-50"
+                className="cursor-pointer fixed bottom-6 right-6 rounded-full text-gray-600 dark:text-gray-300 transition-all duration-200 z-50 opacity-50 hover:opacity-100"
                 aria-label="Alternar tema"
             >
                 {theme === 'light' ? (
-                    <Moon className="w-5 h-5" />
+                    <Moon className="w-10 h-10 hover:text-sky-400" />
                 ) : (
-                    <Sun className="w-5 h-5" />
+                    <Sun className="w-10 h-10 hover:text-amber-400" />
                 )}
             </button>
         </>

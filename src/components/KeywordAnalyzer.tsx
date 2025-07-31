@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { analyzeKeywordDensity } from '../utils/keywordAnalyzer';
 import type { AnalysisResult } from '../types';
+import { ChartNoAxesCombined, Fingerprint, Trash2 } from 'lucide-react';
 
 export default function KeywordAnalyzer() {
   const [keywords, setKeywords] = useState('');
@@ -32,10 +33,10 @@ export default function KeywordAnalyzer() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-          Analisador de Densidade
+        <h2 className="flex items-center text-2xl font-bold text-gray-900 dark:text-white mb-6">
+          <Fingerprint className="mr-2" /> Analisador de Densidade
         </h2>
         
         {/* Formulário */}
@@ -72,7 +73,7 @@ export default function KeywordAnalyzer() {
             <button
               onClick={handleAnalyze}
               disabled={isAnalyzing}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center justify-center"
+              className="cursor-pointer flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center justify-center"
             >
               {isAnalyzing ? (
                 <>
@@ -83,15 +84,17 @@ export default function KeywordAnalyzer() {
                   Analisando...
                 </>
               ) : (
-                '📊 Analisar Densidade'
+                <>
+                  <ChartNoAxesCombined className='h-5 w-5 mr-2' /> Analisar Densidade
+                </>
               )}
             </button>
             
             <button
               onClick={handleClear}
-              className="px-6 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors duration-200"
+              className="cursor-pointer flex items-center px-6 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors duration-200"
             >
-              🗑️ Limpar
+              <Trash2 className='h-5 w-5 mr-2' /> Limpar
             </button>
           </div>
         </div>
